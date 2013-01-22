@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>Coffee-Signal-Slot (minimal) test</title>
+</head>
+
+<body>
+
+  <h1>Coffee-Signal-Slot (minimal) test</h1>
+
+  <p>
+    Click this button: <button onclick="saySomethingPlease()">Click me!</button>
+  </p>
+
+  <script type="text/javascript" src="js/underscore-min.js"></script>
+  <script type="text/javascript" src="js/observer.js"></script>
+  <script type="text/javascript" src="js/signal_slot_capable.js"></script>
+  <script type="text/javascript" src="js/signaler_example.js"></script>
+
+  <script>
+  var signaler = null;
+  function saySomethingPlease()
+  {
+    if( signaler == null ) {
+      signaler = new SignalerExample();
+      signaler.connectToSignal( 'value-changed', function(please_say_this) {
+        alert(please_say_this);
+      });
+    }
+    signaler.emitSomething();
+  }
+  </script>
+</body>
+</html>
