@@ -53,3 +53,9 @@ Requirements
 * Underscore.js
 * observer.js (you can find the original code here: http://mattmueller.me/blog/underscore-extension-observer-pattern)
 * and of course the SignalSlotCapable class found in coffee/signal_slot_capable.js.coffee
+
+
+License
+--------------------------
+
+Simplified BSD, included in license.txt
