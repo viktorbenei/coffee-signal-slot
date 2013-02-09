@@ -17,7 +17,9 @@ This is why I've created this convenience CoffeeScript class, to be able to conn
 How to use
 ------------------
 
-You have to extend your coffee class with SignalSlotCapable and you have to specify the available signals your class is able to emit.
+You can extend your coffee class with SignalSlotCapable and you have to specify the available signals your class is able to emit.
+
+You can also just create an object from the SignalSlotCapable class, list the available signals in an array given to the constructor.
 
 After this you can emit any of the specified signals with optional parameters.
 
@@ -44,7 +46,16 @@ You can connect any observer/receiver/slot to a given slot, simple and easy:
     alert(please_say_this)
   )
 
-You can find a minimal working example in the project and you can test it by opening the 'test.html' file.
+You can also simply create an object directly from SignalSlotCapable and provide the list of the available signals in it's constructor:
+sig_slot_handler = new SignalSlotCapable( 'value-changed', 'some-other-signal' )
+
+You can find a minimal working example in the project and you can test it by opening the 'test.html' file and a 'walk-through' style test file in the 'spec' folder.
+
+
+Specs, with jasmine
+------------------
+
+You can find a spec for SignalSlotCapable in the 'spec' folder. You can test it with Jasmine ( http://pivotal.github.com/jasmine/ ). It worth to check it even if you don't want to run the spec, the test is designed as a 'walk through' as well to showcase how you can use SignalSlotCapable.
 
 
 Requirements
