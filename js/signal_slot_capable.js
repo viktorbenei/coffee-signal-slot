@@ -4,8 +4,8 @@
 
   this.SignalSlotCapable = (function() {
 
-    function SignalSlotCapable() {
-      this.available_signals = [];
+    function SignalSlotCapable(available_signals) {
+      this.available_signals = available_signals != null ? available_signals : [];
     }
 
     SignalSlotCapable.prototype.isSignalAvailable = function(name_of_signal) {

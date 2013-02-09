@@ -2,8 +2,7 @@
 
 class @SignalSlotCapable
 
-  constructor: ->
-    @available_signals = []
+  constructor: ( @available_signals = [] ) ->
 
   isSignalAvailable: (name_of_signal) ->
     return name_of_signal in @available_signals
