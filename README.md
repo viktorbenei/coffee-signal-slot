@@ -55,7 +55,7 @@ You can find a minimal working example in the project and you can test it by ope
 Specs, with jasmine
 ------------------
 
-You can find a spec for SignalSlotCapable in the 'spec' folder. You can test it with Jasmine ( http://pivotal.github.com/jasmine/ ). It worth to check it even if you don't want to run the spec, the test is designed as a 'walk through' as well to showcase how you can use SignalSlotCapable.
+You can find a spec for SignalSlotCapable in the 'spec' folder. You can test it with Jasmine ( https://jasmine.github.io/ ). It worth to check it even if you don't want to run the spec, the test is designed as a 'walk through' as well to showcase how you can use SignalSlotCapable.
 
 
 Requirements
